@@ -7,13 +7,16 @@
       "intent": "AMAZON.StopIntent"
     },
     {
-      "intent": "HelpIntent"
+      "intent": "AMAZON.HelpIntent"
     },
     {
       "intent": "YesIntent"
     },
     {
       "intent": "NoIntent"
+    },
+    {
+      "intent": "DestinationIntent"
     }
   ]
 }

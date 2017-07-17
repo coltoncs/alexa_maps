@@ -1,0 +1,32 @@
+{
+  "name": "alexa_maps",
+  "version": "1.0.0",
+  "description": "simple alexa app for finding destinations via google's maps api",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pizdetz/alexa_maps.git"
+  },
+  "keywords": [
+    "alexa",
+    "amazon",
+    "google",
+    "maps",
+    "api",
+    "node",
+    "js",
+    "javascript"
+  ],
+  "author": "Colton Sweeney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pizdetz/alexa_maps/issues"
+  },
+  "homepage": "https://github.com/pizdetz/alexa_maps#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.11"
+  }
+}

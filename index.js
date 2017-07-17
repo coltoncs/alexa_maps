@@ -1,6 +1,7 @@
 'use strict';
-var Alexa = require("alexa-sdk");  
-var counter;                       //required for questions (see: Yes & No Intents)
+var Alexa = require("alexa-sdk");                        //alexa sdk
+var counter;                                             //typical counter variable
+var API_KEY = 'AIzaSyB32-XPy46YRdrSrjd1UqX-WA_AMwkQaDo'; //google maps api key -- hide on server for deployment
 
 //Initialize Alexa
 exports.handler = function(event, context, callback) {
@@ -9,6 +10,19 @@ exports.handler = function(event, context, callback) {
     console.log('alexa initialized.');
     alexa.execute();
 };
+
+var maps = require("@google/maps").createClient({       //google maps sdk
+    key: API_KEY
+});
+
+maps.geocode({
+    address: '1600 Amphitheatre Parkway, Mountain View, CA'
+}, function(err, response) {
+    if (!err) {
+        console.log(response.json.results);
+    }
+}
+});
 
 var strings = {
     "YES1": "Great! Do you have a mobile presence? ",
